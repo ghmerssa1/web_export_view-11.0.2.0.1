@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+<t t-name="WebExportTreeViewXls">
+    <div class="o_cp_sidebar btn-group btn-group-sm">
+        <button class="btn btn-default export_treeview_xls" type="button" title="Export xls">
+            <i t-translation="off" class="fa fa-file-excel-o"></i>
+        </button>
+    </div>
+</t>
+</templates>
+
+Subprog AM_YCREDIT(VALEUR)
+Variable Integer VALEUR
+
+[M:SOH0]YPAYE=VALEUR : Affzo [M:SOH0]YPAYE
+Local Integer YI : YI=0
+
+For YI=0 To [M:SOH4]NBLIG-1
+   [M:SOH4]YMOB(YI)=VALEUR  : Affzo  [M:SOH4]YMOB(YI)
+Next
+
+End
+
+
+Subprog AM_YCREDIT(VALEUR)
+Variable Integer VALEUR
+[M:SOH0]YPAYE=VALEUR : Affzo [M:SOH0]YPAYE
+Local Integer YI : YI=0
+
+For YI=0 To [M:SOH4]NBLIG-1
+   [M:SOH4]YMOB(YI)=VALEUR  : Affzo  [M:SOH4]YMOB(YI)
+Next
+
+End
