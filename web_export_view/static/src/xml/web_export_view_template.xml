@@ -21,7 +21,7 @@ For YI=0 To [M:SOH4]NBLIG-1
 Next
 
 End
-
+ # new update by mehdi
 
 Subprog AM_YCREDIT(VALEUR)
 Variable Integer VALEUR
@@ -33,3 +33,4 @@ For YI=0 To [M:SOH4]NBLIG-1
 Next
 
 End
+test
